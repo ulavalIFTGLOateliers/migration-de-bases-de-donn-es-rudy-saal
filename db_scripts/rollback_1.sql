@@ -1,3 +1,5 @@
+USE atelier_bd;
+
 DROP TABLE band;
 
 ALTER TABLE musician

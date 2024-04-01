@@ -1,3 +1,5 @@
+USE atelier_bd;
+
 ALTER TABLE singer RENAME TO musician;
 
 ALTER TABLE musician RENAME COLUMN singerName TO musicianName;
