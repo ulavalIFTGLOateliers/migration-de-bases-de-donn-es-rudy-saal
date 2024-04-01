@@ -1,8 +1,6 @@
-USE atelier_bd
+ALTER TABLE singer RENAME TO musician;
 
-ALTER TABLE singer RENAME TO musician
-
-ALTER TABLE musician RENAME COLUMN singerName TO musicianName
+ALTER TABLE musician RENAME COLUMN singerName TO musicianName;
 
 ALTER TABLE musician ADD COLUMN role VARCHAR(50);
 
@@ -36,7 +34,7 @@ UPDATE musician
 SET bandName = "Luna"
 WHERE musicianName = "Luna";
 
-CREATE TABLE band (bandName varchar(50) PRIMARY KEY, creation YEAR, genre varchar(50))
+CREATE TABLE band (bandName varchar(50) PRIMARY KEY, creation YEAR, genre varchar(50));
 
 INSERT INTO band
 VALUES ("Crazy Duo", 2015, "rock"), ("Luna", 2009, "classical"), ("Mysterio", 2019, "pop");
