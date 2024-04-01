@@ -13,15 +13,10 @@ class Database:
         """
         load_dotenv("variables.env")
         self.host = os.environ.get("HOST")
-        print(self.host)
         self.port = int(os.environ.get("PORT"))
-        print(self.port)
         self.database = os.environ.get("DATABASE")
         self.user = os.environ.get("USER")
         self.password = os.environ.get("PASSWORD")
-        print(self.database)
-        print(self.user)
-        print(self.password)
 
         self._open_sql_connection()
 
