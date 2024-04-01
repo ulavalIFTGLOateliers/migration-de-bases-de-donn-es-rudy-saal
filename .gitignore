@@ -2,4 +2,4 @@
 .idea/
 venv/
 *.pyc
-variables.env
+.env
